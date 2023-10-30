@@ -1,0 +1,21 @@
+<div class="product-detail container" align="center">
+  <div class="image">
+    <img src="{{product.imageUrl}}" width="200px" alt="Product Image">
+  </div>
+  <div class="info">
+    <h2 class="name">Product {{product.name}}</h2>
+    <div class="price">Price: {{product.price}}</div>
+    <div class="discount">Discount: {{product.discount}}</div>
+    <div class="discount">Available Quantity: {{product.availableQuantity}}</div>
+    <div class="quantity">
+     
+      <label for="quantity">Quantity:</label>
+      <input id="quantity" type="number"  [contentEditable]="false" [(ngModel)]="productQuantity" min="1" max="{{product.availableQuantity}}" >
+    </div>
+    <button class="add-to-cart" (click)="addToCart()">Add to Cart</button>
+    <div class="rating">
+      <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+      <span class="rating-value">4.5</span>
+    </div>
+  </div>
+</div>

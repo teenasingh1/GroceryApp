@@ -1,0 +1,7 @@
+C:\Users\teenasingh\Documents\Assignment\teena-singh\ExitTest\Grocery\obj\Debug\net5.0\Grocery.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\teenasingh\Documents\Assignment\teena-singh\ExitTest\Grocery\obj\Debug\net5.0\Grocery.AssemblyInfoInputs.cache
+C:\Users\teenasingh\Documents\Assignment\teena-singh\ExitTest\Grocery\obj\Debug\net5.0\Grocery.AssemblyInfo.cs
+C:\Users\teenasingh\Documents\Assignment\teena-singh\ExitTest\Grocery\obj\Debug\net5.0\Grocery.csproj.CoreCompileInputs.cache
+C:\Users\teenasingh\Documents\Assignment\teena-singh\ExitTest\Grocery\obj\Debug\net5.0\Grocery.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\teenasingh\Documents\Assignment\teena-singh\ExitTest\Grocery\obj\Debug\net5.0\Grocery.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\teenasingh\Documents\Assignment\teena-singh\ExitTest\Grocery\obj\Debug\net5.0\Grocery.csproj.AssemblyReference.cache

@@ -1,0 +1,19 @@
+<div class="container">
+    
+<div class="card" style="width: 36rem;" *ngFor="let o of orders">
+    <div class="card-body">
+      <h5 class="card-title">Order Id : {{o.orderId}}</h5>
+      <p class="card-text" *ngIf="o.status==0">Status : Placed</p>
+      <p class="card-text" *ngIf="o.status==1">Status : Shipped</p>
+      <p class="card-text" *ngIf="o.status==2">Status : Delivered</p>
+      <p class="card-text" *ngIf="o.status==3">Status : Cancelled</p>
+    </div>
+    <ul class="list-group list-group-light list-group-small">
+      <li class="list-group-item px-4" *ngFor="let i of o.orderItems">{{i.productName}} x {{i.quantity}}</li>
+      
+    </ul>
+    <div class="card-body">
+        <p class="card-text" >Total Amount : {{o.totalAmount}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="container">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Add Product</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form>
+          <div>
+            Name : <mat-form-field>
+            <input  matInput  placeholder="Name" [(ngModel)]="addProductRequest.name"  type="text" name="name"  required>
+          </mat-form-field></div>
+    <div>
+      Description :
+          <mat-form-field>
+            <input  matInput  placeholder="Descriotion" [(ngModel)]="addProductRequest.description"  type="text"  name="description"  required>
+          </mat-form-field>
+    </div>
+          <div>
+            Category :
+          <mat-form-field>
+            <input  matInput  placeholder="Category" [(ngModel)]="addProductRequest.category"  type="text"  name="category"  required>
+          </mat-form-field>
+          </div>
+          <div>
+            Available Quantity :
+          <mat-form-field>
+    
+            <input  matInput  placeholder="Available Quantity" [(ngModel)]="addProductRequest.availableQuantity"  type="number"  name="quantity"  required>
+          </mat-form-field>
+          </div>
+          <div>
+            Price :
+          <mat-form-field>
+            <input  matInput  placeholder="Price" [(ngModel)]="addProductRequest.price"  type="number"  name="price"  required>
+          </mat-form-field>
+          </div>
+          <div>
+            Discount :
+            <mat-form-field>
+              <input  matInput  placeholder="Discount" [(ngModel)]="addProductRequest.discount"  type="number"  name="discount"   required>
+            </mat-form-field>
+          </div>
+          <div>
+      Image :
+          
+      <mat-form-field>
+        <input  matInput  placeholder="Image Url" [(ngModel)]="addProductRequest.imageUrl"  type="text"  name="image"   required>
+      </mat-form-field>
+          </div>
+    
+        </form>
+      </mat-card-content>
+      <mat-card-actions>
+        <button  matInput mat-raised-button (click)="submit()"  color="primary">Add</button>
+      </mat-card-actions>
+    </mat-card>
+    </div>
+    

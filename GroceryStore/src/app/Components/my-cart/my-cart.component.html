@@ -1,0 +1,67 @@
+<section>
+  <div class="banner-innerpage" style="
+          background-image: url(https://images.pexels.com/photos/1005638/pexels-photo-1005638.jpeg?cs=srgb&dl=pexels-oleg-magni-1005638.jpg&fm=jpg);
+        ">
+    <div class="container">
+      <!-- Row  -->
+      <div class="row justify-content-center">
+        <!-- Column -->
+        <div class="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
+          <h1 class="title">Your Cart</h1>
+          <h6 class="subtitle op-8">
+
+          </h6>
+        </div>
+        <!-- Column -->
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+    <div class="spacer">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-lg-9">
+            <div class="row shop-listing">
+              <table class="table shop-table" *ngIf="carts">
+                <tr>
+                  <th class="b-0">Image</th>
+                  <th class="b-0">Name</th>
+                  <th class="b-0">Price</th>
+                  <th class="b-0">Quantity</th>
+
+                  <th class="b-0 text-right">Total Price</th>
+                </tr>
+                <tr *ngFor="let item of carts.items">
+                  <td>
+                    <img src="{{ item.productId.image }}" alt="img" class="img-responsive" width="60">
+                  </td>
+                  <td>{{ item.productId.name }}</td>
+                  <td>{{ item.productId.price }}</td>
+                  <td>
+                    <button *ngIf="item.quantity<=item.productId.maxQuantity"  class=  "btn btn-primary btn-sm" (click)="_increamentQTY(item.productId._id,item.quantity+1)">+</button>
+                    {{ item.quantity }}
+                    <button class="btn btn-primary btn-sm" (click)="_decreamentQTY(item.productId._id,item.quantity-1)">-</button>
+                  </td>
+                  <td class="text-right">
+                    <h5 class="font-medium m-b-30">{{ item.total }}</h5>
+                  </td>
+                 
+                </tr>
+                <tr>
+                  <td colspan="3" >Subtotal :{{ carts.subTotal }}</td>
+                  <td colspan="4" >
+                    <button class="btn btn-danger" (click)="_emptyCart()">Empty Cart</button>
+                  </td>
+                  <td colspan="4" >
+                    <button class="btn btn-success" (click)="PlaceOrder()">Place Order</button>
+                  </td>
+                </tr>
+                
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
